@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>没有光影的世界，还能有电影吗？</title>
+    <link rel="stylesheet" href="stylexiugai.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+</head>
+
+
+<body>
+    <section class="video-container">
+        <video id="video" class="video" src="vedio/熟悉的声音要回来了！龙标好久不见！ - 1.熟悉的声音要回来了！龙标好久不见！(Av968826482,P1).mp4" autoplay
+            muted loop></video>
+        <video id="background-video" class="video"
+            src="vedio/熟悉的声音要回来了！龙标好久不见！ - 1.熟悉的声音要回来了！龙标好久不见！(Av968826482,P1).mp4" autoplay muted loop></video>
+        <div id="mask" class="mask"></div>
+        <img id="black-img" class="black-img" src="black.jpg" alt="全黑图片" style="display: none;">
+       
+    <div class="content">
+        <h1 id="headline">明眼人视角</h1>
+        <p id="text">点击按钮查看不同视障人士眼中的画面</p>
+        <button onclick="changeEffect()">点击切换效果</button>
+    </div>
+    <div class="flourish-embed flourish-scatter" data-src="visualisation/18169522">
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+    </div>
+</section>
+    <script>
+        var videos = [
+
+            {
+                src: "vedio/模糊1.mp4",
+                headline: "四级低视力",
+                text: "0.1<=双眼最佳矫正视力<0.3"
+            },
+            {
+                src: "vedio/模糊2.mp4",
+                headline: "三级低视力",
+                text: "0.05<=双眼最佳矫正视力<0.1"
+            },
+            {
+                src: "vedio/模糊3.mp4",
+                headline: "二级盲",
+                text: "0.02<=双眼最佳矫正视力<0.05"
+            },
+            {
+                src: "vedio/模糊4.mp4",
+                headline: "一级盲",
+                text: "无光感<双眼最佳矫正视力<0.02"
+            }
+        ];
+        var currentIndex = 0;
+        var isVideoEffect = true;
+
+        function changeEffect() {
+            if (isVideoEffect) {
+                changeVideo();
+            } else {
+                switchToVideoEffect();
+            }
+        }
+
+        function changeVideo() {
+            if (currentIndex < videos.length) {
+                var videoElement = document.getElementById('video');
+                var headlineElement = document.getElementById('headline');
+                var textElement = document.getElementById('text');
+                var maskElement = document.getElementById('mask');
+                var blackImg = document.getElementById('black-img');
+                var backgroundVideoElement = document.getElementById('background-video');
+
+                videoElement.src = videos[currentIndex].src;
+                headlineElement.textContent = videos[currentIndex].headline;
+                textElement.textContent = videos[currentIndex].text;
+                maskElement.style.display = 'none'; // Ensure the mask is hidden
+                blackImg.style.display = 'none'; // Ensure the black image is hidden
+                backgroundVideoElement.pause(); // Pause the background video
+
+                videoElement.load(); // Reload the video to apply the new source
+                currentIndex++;
+            } else {
+                // If all videos are played, switch to mask effect
+                isVideoEffect = false;
+                currentIndex = 0; // Reset index for future use
+                switchToMaskEffect();
+            }
+        }
+
+        function switchToMaskEffect() {
+            var headlineElement = document.getElementById('headline');
+            var textElement = document.getElementById('text');
+            var maskElement = document.getElementById('mask');
+            var blackImg = document.getElementById('black-img');
+            var videoElement = document.getElementById('video');
+            var backgroundVideoElement = document.getElementById('background-video');
+
+            headlineElement.textContent = "视野半径受限";
+            textElement.textContent = "二级盲：视野半径<10度，一级盲：视野半径<5度";
+            maskElement.style.display = 'block'; // Ensure the mask is visible
+            blackImg.style.display = 'block'; // Show the black image
+            videoElement.pause(); // Pause the main video
+            backgroundVideoElement.src = "vedio/熟悉的声音要回来了！龙标好久不见！ - 1.熟悉的声音要回来了！龙标好久不见！(Av968826482,P1).mp4", // Set background video to the first video
+                backgroundVideoElement.play(); // Play the background video
+
+            document.addEventListener('mousemove', handleMouseMove);
+        }
+
+        function switchToVideoEffect() {
+            var videoElement = document.getElementById('video');
+            var headlineElement = document.getElementById('headline');
+            var textElement = document.getElementById('text');
+            var maskElement = document.getElementById('mask');
+            var blackImg = document.getElementById('black-img');
+            var backgroundVideoElement = document.getElementById('background-video');
+
+            // Reset to the initial video and text content
+            videoElement.src = videos[0].src;
+            headlineElement.textContent = videos[0].headline;
+            textElement.textContent = videos[0].text;
+            maskElement.style.display = 'none'; // Hide the mask
+            blackImg.style.display = 'none'; // Hide the black image
+            backgroundVideoElement.pause(); // Pause the background video
+
+            videoElement.play(); // Play the video
+
+            document.removeEventListener('mousemove', handleMouseMove);
+            currentIndex = 1; // Start from the second video on the next change
+            isVideoEffect = true; // Switch back to video effect
+        }
+
+        function handleMouseMove(e) {
+            const mask = document.getElementById('mask');
+            const rect = mask.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            mask.style.background = `radial-gradient(circle at ${x}px ${y}px, transparent 100px, black 150px)`;
+        }
+    </script>
+    <section class="wangluoyulun">
+        <h2>wfeajwekf</h2>
+        <div class="flourish-embed flourish-scatter" data-src="visualisation/18169522"><script src="https://public.flourish.studio/resources/embed.js"></script></div>s
+    </section>
+       
+   
+</body>
+
+</html>
