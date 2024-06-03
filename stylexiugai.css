@@ -14,19 +14,16 @@ html {
 h1,
 h2,
 p {
-    color: #f4edea;
+    color: #FDF0D5;
 }
 
-.main-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
 
 .video-container {
-    position: relative; /* 将视频容器改为相对定位 */
+    position: relative;
+    /* 将视频容器改为相对定位 */
     width: 100%;
-    height: 100vh; /* 设置视频容器高度为页面的一半 */
+    height: 100vh;
+    /* 设置视频容器高度为页面的一半 */
     background-color: black;
     overflow: hidden;
     z-index: 1;
@@ -52,18 +49,18 @@ p {
 
 .content {
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #00000080;
     border-radius: 10px;
     padding: 50px;
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #669BBC;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -74,16 +71,28 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #E8871E;
 }
 
-.anli,
-.wangluoyulun {
+
+.toutu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    margin-top: 20px;
-    color: white;
+    padding: 0px;
+    background-color: black;
+}
+
+#mubuzuo,
+#mubuyou {
+    max-width: 100vh;
+    /* 控制图片最大宽度 */
+    height: auto;
+    z-index: 2;
+}
+
+#页面一标题 {
+    font-size: 100px; /* 设置字体大小为 24 像素 */
+    text-align: center;
 }
