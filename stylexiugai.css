@@ -141,7 +141,7 @@ button:hover {
 
 @media (max-width: 576px) {
     #页面一标题 {
-       font-size: calc(4rem);
+       font-size: calc(6rem+4vw);
     }
 
     .content {
