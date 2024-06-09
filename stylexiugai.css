@@ -97,4 +97,24 @@ button:hover {
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    #页面一标题 {
+        font-size: 6vw;
+    }
 
+    #mubuzuo,
+    #mubuyou {
+        width: 30%;
+    }
+}
+
+@media (max-width: 576px) {
+    #页面一标题 {
+       font-size: 25px;
+    }
+
+    #mubuzuo,
+    #mubuyou {
+        width: 35%;
+    }
+}
