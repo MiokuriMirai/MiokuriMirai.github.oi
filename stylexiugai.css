@@ -101,7 +101,7 @@ button:hover {
 
 @media (max-width: 1200px) {
     #页面一标题 {
-        font-size: 6vw;
+        font-size: 100px;
     }
 
     .content {
@@ -111,7 +111,7 @@ button:hover {
 
 @media (max-width: 992px) {
     #页面一标题 {
-        font-size: 6vw;
+        font-size: 100px;
     }
 
     .content {
