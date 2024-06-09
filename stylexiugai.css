@@ -94,6 +94,9 @@ button:hover {
 #页面一标题 {
     font-size: 100px;
     text-align: center;
+    transition: opacity 0.5s; /* 添加过渡效果，平滑不透明度变化 */
+    position: relative;
+    z-index: 3; /* 确保标题位于顶层，不被其他元素遮挡 */
 }
 
 @media (max-width: 1200px) {
