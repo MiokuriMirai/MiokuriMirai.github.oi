@@ -92,7 +92,7 @@ button:hover {
 }
 
 #页面一标题 {
-    font-size: calc(2rem+4vw);
+    font-size: 100px;
     text-align: center;
     z-index: 3;
     position: relative;
@@ -141,7 +141,7 @@ button:hover {
 
 @media (max-width: 576px) {
     #页面一标题 {
-       font-size: calc(2rem+4vw);
+       font-size: 25px;
     }
 
     .content {
