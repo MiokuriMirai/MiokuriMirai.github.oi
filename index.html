@@ -13,14 +13,14 @@
 
 <body>
     <section class="toutu">
-        <img id="mubuzuo" src="img/幕布.png" alt="左边幕布">
+        <img id="mubuzuo" src="幕布.png" alt="左边幕布">
         <h1 id="页面一标题">没有光影的世界，<br>还能有电影吗？</h1>
-        <img id="mubuyou" src="img/幕布2.png" alt="右边幕布">
+        <img id="mubuyou" src="幕布2.png" alt="右边幕布">
     </section>
 
     <section class="video-container">
-        <video id="video" class="video" src="vedio/熟悉的声音要回来了！龙标好久不见！ - 1.熟悉的声音要回来了！龙标好久不见！(Av968826482,P1).mp4" autoplay muted loop></video>
-        <video id="background-video" class="video" src="vedio/熟悉的声音要回来了！龙标好久不见！ - 1.熟悉的声音要回来了！龙标好久不见！(Av968826482,P1).mp4" autoplay muted loop></video>
+        <video id="video" class="video" src="熟悉的声音要回来了！龙标好久不见！ - 1.熟悉的声音要回来了！龙标好久不见！(Av968826482,P1).mp4" autoplay muted loop></video>
+        <video id="background-video" class="video" src="熟悉的声音要回来了！龙标好久不见！ - 1.熟悉的声音要回来了！龙标好久不见！(Av968826482,P1).mp4" autoplay muted loop></video>
         <div id="mask" class="mask"></div>
         <img id="black-img" class="black-img" src="black.jpg" alt="全黑图片" style="display: none;">
 
@@ -39,10 +39,10 @@
 
     <script>
         var videos = [
-            { src: "vedio/模糊1.mp4", headline: "四级低视力", text: "0.1<=双眼最佳矫正视力<0.3" },
-            { src: "vedio/模糊2.mp4", headline: "三级低视力", text: "0.05<=双眼最佳矫正视力<0.1" },
-            { src: "vedio/模糊3.mp4", headline: "二级盲", text: "0.02<=双眼最佳矫正视力<0.05" },
-            { src: "vedio/模糊4.mp4", headline: "一级盲", text: "无光感<双眼最佳矫正视力<0.02" }
+            { src: "模糊1.mp4", headline: "四级低视力", text: "0.1<=双眼最佳矫正视力<0.3" },
+            { src: "模糊2.mp4", headline: "三级低视力", text: "0.05<=双眼最佳矫正视力<0.1" },
+            { src: "模糊3.mp4", headline: "二级盲", text: "0.02<=双眼最佳矫正视力<0.05" },
+            { src: "模糊4.mp4", headline: "一级盲", text: "无光感<双眼最佳矫正视力<0.02" }
         ];
         var isVideoEffect = true;
 
@@ -85,7 +85,7 @@
             maskElement.style.display = 'block';
             blackImg.style.display = 'block';
 
-            backgroundVideoElement.src = "vedio/熟悉的声音要回来了！龙标好久不见！ - 1.熟悉的声音要回来了！龙标好久不见！(Av968826482,P1).mp4";
+            backgroundVideoElement.src = "熟悉的声音要回来了！龙标好久不见！ - 1.熟悉的声音要回来了！龙标好久不见！(Av968826482,P1).mp4";
             backgroundVideoElement.play();
 
             document.addEventListener('mousemove', handleMouseMove);
