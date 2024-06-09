@@ -51,8 +51,6 @@ p {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 40%;
-    height: 40vh;
     transform: translate(-50%, -50%);
     z-index: 2;
     text-align: center;
@@ -62,8 +60,6 @@ p {
 }
 
 button {
-    width: 20%;
-    height: 5vh;
     background-color: #698980;
     border: none;
     color: #f8efd2;
