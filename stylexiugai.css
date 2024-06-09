@@ -62,6 +62,8 @@ p {
 }
 
 button {
+    width: 20%;
+    height: 5vh;
     background-color: #698980;
     border: none;
     color: #f8efd2;
