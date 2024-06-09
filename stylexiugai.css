@@ -93,37 +93,8 @@ button:hover {
 }
 
 #页面一标题 {
-    font-size: 100px; /* 设置字体大小为 24 像素 */
+    font-size: 100px; 
     text-align: center;
 }
 
 
-@media (max-width: 768px) {
-    #页面一标题 {
-        font-size: 6vw;
-    }
-
-    .content {
-        width: 60%;
-    }
-
-    #mubuzuo,
-    #mubuyou {
-        width: 30%;
-    }
-}
-
-@media (max-width: 576px) {
-    #页面一标题 {
-       font-size: 25px;
-    }
-
-    .content {
-        width: 60%;
-    }
-
-    #mubuzuo,
-    #mubuyou {
-        width: 35%;
-    }
-}
