@@ -106,10 +106,8 @@
             var titleElement = document.getElementById('页面一标题');
 
             if (scrollTop > 0) {
-                videoContainer.style.transform = 'translateY(-' + scrollTop + 'px)';
                 titleElement.style.opacity = 1 - (scrollTop / videoContainer.clientHeight);
             } else {
-                videoContainer.style.transform = 'translateY(0)';
                 titleElement.style.opacity = 1;
             }
         });
