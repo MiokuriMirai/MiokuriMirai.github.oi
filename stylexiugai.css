@@ -92,7 +92,7 @@ button:hover {
 }
 
 #页面一标题 {
-    font-size: 4vw;
+    font-size: calc(2rem+4vw);
     text-align: center;
     z-index: 3;
     position: relative;
