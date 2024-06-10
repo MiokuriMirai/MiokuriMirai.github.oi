@@ -48,6 +48,7 @@ p {
 .content3791 {
     position: absolute;
     width: 40%;
+    height:40%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -63,7 +64,7 @@ button {
     border: none;
     color: #f8efd2;
     padding: 10px 20px;
-    font-size: 5vh;
+    font-size: 5vw;
     cursor: pointer;
     border-radius: 5px;
     margin-top: 20px;
