@@ -20,10 +20,8 @@ p {
 
 .video-container {
     position: relative;
-    /* 将视频容器改为相对定位 */
     width: 100%;
     height: 100vh;
-    /* 设置视频容器高度为页面的一半 */
     background-color: black;
     overflow: hidden;
     z-index: 1;
@@ -47,8 +45,10 @@ p {
     display: none;
 }
 
-.content {
+.content3791 {
     position: absolute;
+    width: 40%;
+    height: 40vh;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -60,11 +60,13 @@ p {
 }
 
 button {
+    width: 20%;
+    height: 5vh;
     background-color: #698980;
     border: none;
     color: #f8efd2;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 5vh;
     cursor: pointer;
     border-radius: 5px;
     margin-top: 20px;
