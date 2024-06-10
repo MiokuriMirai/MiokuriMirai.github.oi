@@ -54,8 +54,8 @@ p {
     text-align: center;
     background-color: #00000080;
     border-radius: 10px;
-    padding: 2vw; /* 使用相对单位 */
-    width: 80%; /* 使用百分比 */
+    padding: 5vw; /* 使用相对单位 */
+    width: 90%; /* 使用百分比 */
     max-width: 600px; /* 最大宽度 */
 }
 
@@ -63,11 +63,11 @@ button {
     background-color: #698980;
     border: none;
     color: white;
-    padding: 1vw 2vw; /* 使用相对单位 */
+    padding: 2vw 4vw; /* 使用相对单位 */
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
-    margin-top: 1vw; /* 使用相对单位 */
+    margin-top: 2vw; /* 使用相对单位 */
 }
 button:hover {
     background-color: #af3c33;
@@ -86,7 +86,6 @@ button:hover {
 #mubuzuo,
 #mubuyou {
     max-width: 100vh;
-    /* 控制图片最大宽度 */
     height: auto;
     z-index: 2;
 }
@@ -97,34 +96,37 @@ button:hover {
 }
 @media (max-width: 768px) {
     #页面一标题 {
-        font-size: 6vw;
+        font-size: 7vw;
     }
 
     .content3791 {
-        width: 60%;
+        width: 80%;
+        padding: 4vw;
     }
 
     #mubuzuo,
     #mubuyou {
-        width: 30%;
+        width: 20%;
     }
 }
 
 @media (max-width: 576px) {
     #页面一标题 {
-       font-size: 30px;
+       font-size: 8vw;
     }
 
     .content3791 {
-        width: 60%;
+        width: 90%;
+        padding: 5vw;
     }
 
     #mubuzuo,
     #mubuyou {
-        width: 10%;
+        width: 15%;
     }
-        button {
-        padding: 3vw 6vw;
-        font-size: 1.8rem;
+
+    button {
+        padding: 4vw 8vw;
+        font-size: 1.5rem;
     }
 }
