@@ -125,7 +125,6 @@ button:hover {
         width: 10%;
     }
         button {
-        padding: 3vw 6vw;
-        font-size: 1.8rem;
+        font-size: 20px;
     }
 }
