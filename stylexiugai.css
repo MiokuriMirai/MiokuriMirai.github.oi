@@ -62,14 +62,13 @@ p {
 button {
     background-color: #698980;
     border: none;
-    color: #f8efd2;
-    padding: 10px 20px;
-    font-size: 5vw;
+    color: white;
+    padding: 1vw 2vw; /* 使用相对单位 */
+    font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 1vw; /* 使用相对单位 */
 }
-
 button:hover {
     background-color: #af3c33;
 }
@@ -125,6 +124,7 @@ button:hover {
         width: 10%;
     }
         button {
-        font-size: 20px;
+        padding: 3vw 6vw;
+        font-size: 1.8rem;
     }
 }
