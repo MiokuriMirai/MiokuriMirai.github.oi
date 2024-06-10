@@ -48,7 +48,6 @@ p {
 .content3791 {
     position: absolute;
     width: 40%;
-    height: 40vh;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -60,8 +59,6 @@ p {
 }
 
 button {
-    width: 20%;
-    height: 5vh;
     background-color: #698980;
     border: none;
     color: #f8efd2;
